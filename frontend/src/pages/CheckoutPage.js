@@ -5,11 +5,15 @@ import { Container, Row, Col, Form, Button, ListGroup, Card, Alert } from 'react
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { useCart } from '../contexts/CartContext';
+import { useNotification } from '../contexts/NotificationContext';
+
+
 
 function CheckoutPage() {
   const { currentUser } = useAuth();
   const { cart, checkout, loading, error } = useCart();
   const navigate = useNavigate();
+  const { showNotification } = useNotification();
   
   const [formData, setFormData] = useState({
     delivery_address: '',

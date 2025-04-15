@@ -276,20 +276,18 @@ function ProductFormPage() {
               </Form.Group>
               
               <Form.Group as={Col} md={4} className="mb-3" controlId="quantity_available">
-              // src/pages/ProductFormPage.js (continued)
-
-<Form.Label>Quantity Available</Form.Label>
-<Form.Control
-  type="number"
-  min="0"
-  name="quantity_available"
-  value={formData.quantity_available}
-  onChange={handleChange}
-  isInvalid={!!errors.quantity_available}
-/>
-<Form.Control.Feedback type="invalid">
-  {errors.quantity_available}
-</Form.Control.Feedback>
+  <Form.Label>Quantity</Form.Label>  {/* Changed from "Quantity Available" to "Quantity" */}
+  <Form.Control
+    type="number"
+    min="0"
+    name="quantity_available"
+    value={formData.quantity_available}
+    onChange={handleChange}
+    isInvalid={!!errors.quantity_available}
+  />
+  <Form.Control.Feedback type="invalid">
+    {errors.quantity_available}
+  </Form.Control.Feedback>
 </Form.Group>
 
 <Form.Group as={Col} md={4} className="mb-3" controlId="unit">

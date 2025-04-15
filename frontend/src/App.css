@@ -1,5 +1,9 @@
 /* src/App.css */
 
+body {
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
 /* For better footer positioning */
 #root {
   min-height: 100vh;
@@ -35,4 +39,290 @@
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* src/App.css - Add these animation styles */
+
+/* General transitions */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.product-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e9e9e9;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(40, 168, 121, 0.1);
+  border-color: #28a879;
+}
+
+/* Custom styling for focus effects */
+.form-control:focus {
+  border-color: #28a879;
+  box-shadow: 0 0 0 0.25rem rgba(40, 168, 121, 0.25);
+}
+
+/* Animated elements */
+.animated-element {
+  transition: all 0.5s ease;
+}
+
+.animated-element:hover {
+  transform: scale(1.05);
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #212529;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.text-success {
+  color: #28a879 !important;
+}
+
+.btn-success {
+  background-color: #28a879;
+  border-color: #28a879;
+}
+
+.btn-success:hover {
+  background-color: #1e8c63;
+  border-color: #1e8c63;
+}
+
+/* src/App.css - Add these color variables */
+
+/* src/App.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Root variables for color scheme */
+:root {
+  --primary-green: #28a879;      /* Main brand green */
+  --dark-green: #1e7d5b;         /* Darker shade for hover states */
+  --light-green: #e8f5e9;        /* Light green for backgrounds */
+  --earth-brown: #8b5a2b;        /* Earthy brown for accents */
+  --light-brown: #d7ccc8;        /* Light brown for backgrounds */
+  --wheat: #f5deb3;              /* Wheat color for cards */
+  --cream: #fff8e1;              /* Cream color for backgrounds */
+  --sky-blue: #bbdefb;           /* Sky blue for water themes */
+}
+
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #212529;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+/* For better footer positioning */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* General transitions */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Consistent green theme color */
+.btn-success, .bg-success {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+.btn-outline-success {
+  color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+}
+
+.btn-outline-success:hover {
+  color: #fff !important;
+  background-color: var(--primary-green) !important;
+}
+
+.text-success {
+  color: var(--primary-green) !important;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.product-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e9e9e9;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(40, 168, 121, 0.1);
+  border-color: var(--primary-green);
+}
+
+/* Custom styling for focus effects */
+.form-control:focus {
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 0.25rem rgba(40, 168, 121, 0.25);
+}
+
+/* Animated elements */
+.animated-element {
+  transition: all 0.5s ease;
+}
+
+.animated-element:hover {
+  transform: scale(1.05);
+}
+
+/* Agricultural color classes */
+.bg-earth {
+  background-color: var(--earth-brown);
+  color: white;
+}
+
+.bg-wheat {
+  background-color: var(--wheat);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
+.text-earth {
+  color: var(--earth-brown);
+}
+
+/* Gradient backgrounds */
+.bg-farm-gradient {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--earth-brown) 100%);
+  color: white;
+}
+
+/* Additional mobile styles */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 60px; /* Space for mobile navigation */
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* src/App.css */
+
+/* Toast notifications */
+.toast {
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.toast-header {
+  border-bottom: none !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.toast-body {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  padding: 1rem !important;
+}
+
+/* Success toast */
+.bg-success .toast-body {
+  font-weight: 500;
+}
+
+/* Danger toast */
+.bg-danger .toast-body {
+  font-weight: 500;
 }
